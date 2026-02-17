@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" conten="This is the form that  use javascript">
+    <meta name="author" content="AMANI Daniel">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <form>
+    
+        <fieldset>
+            <legend>Personal Information </legend>
+            <div class="form-item">
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Full Name" required>
+            </div>
+    
+            <div class="form-item">
+                <label for="phone">Contact:</label>
+                <input type="tel" name="phone" id="phone" maxlength="10" inputmode="numeric" pattern="[0-9]{10}"
+                    placeholder="Enter Your Phone number" required>
+            </div>
+    
+            <div class="form-item">
+                <label for="id">ID:</label>
+                <input type="text" name="id" id="id" pattern="\d{16}" inputmode="numeric" maxlength="16" required placeholder="Enter Your National ID">
+            </div>
+    
+            <div class="form-item">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@gmail.com" required>
+            </div>
+    
+            <div class="form-item">
+                <label for="date">Date Of Birth</label>
+                <input type="date" name="date" id="date">
+            </div>
+    
+            <div class="form-item">
+                <label for="gender">Gender:</label>
+                <div class="choise">
+                    <label for="male"><input type="radio" name="male" id="male">Male</label>
+                    <label for="female"><input type="radio" name="male" id="female">Female</label>
+                </div>
+            </div>
+    
+            <div class="form-item">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age">
+            </div>
+    
+           <div class="submit">
+                <button type="submit">Submit</button>
+                <button type="submit">Cancel</button>
+           </div>
+        </fieldset>
+    
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
