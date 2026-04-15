@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Code Learning Camp</title>
+
+    <link rel="stylesheet" href="styles/code.css">
+    <link rel="stylesheet" href="styles/code-large.css">
+    <script src="scripts/code.js" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Logo image">
+
+        <div class="top-nav">
+            <button id="darkToggle">🌙</button>
+            <div class="top-menu">
+                <h1>A-Code Learning Camp</h1>
+                <a id="menu"></a>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="employees.html">Employment</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <p class="regis">Enroll in the upcoming Cohort by filling this registration form.</p>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="part">
+                    <label for="fname">First Name*</label>
+                    <input type="text" name="fname" id="fname" placeholder="Enter Your First Name" required>
+                </div>
+
+                <div class="part">
+                    <label for="lname">Last Name*</label>
+                    <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name" required>
+                </div>
+
+                <div class="part">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Academic Details</legend>
+                <div class="part">
+                    <label for="course">Completed Course*</label>
+                    <select name="courses" id="course" required>
+                        <option value="" selected disabled>Select Completed Course</option>
+                    </select>
+                </div>
+
+                <div class="part">
+                    <label for="language">Preferred Programming Languages</label>
+
+                    <div>
+                        <input type="checkbox" name="c++" id="c++" value="yes">
+                        <label for="c++">C++</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="java" id="java" value="yes">
+                        <label for="java">Java</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="javascript" id="javascript" value="yes">
+                        <label for="javascript">Javascript</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="python" id="python" value="yes">
+                        <label for="python">Python</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="swift" id="swift" value="swift">
+                        <label for="swift">Swift</label>
+                    </div>
+                </div>
+
+            </fieldset>
+            <input type="submit" value="Register" id="btn">
+        </form>
+    </main>
+    <footer>
+        <div class="pragra">
+            <p>&copy;<span id="currentyear"></span> &star; AMANI Daniel &star; Rwanda</p>
+            <p>Last Modification: <span id="lastmodified"></span></p>
+        </div>
+        <div class="imag">
+            <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="the facebook icon"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="the linkedin"></a>
+            <a href="https://x.com/"><img src="images/twitter-x.svg" alt="the X icon"></a>
+            <a href="https://www.youtube.com/watch?v=ktYYgfcy3-I"><img src="images/youtube.svg"
+                    alt="the youtube icon"></a>
+
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+ header {
+    border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     margin-top: .5rem;
+     position: relative;
+ }
+
+header img{
+    width: 300px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+
+}
+/*--------------------style the top-nav class------------------*/
+.top-menu{
+    display: flex;
+}
+.top-nav {
+    display: block;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: auto;
+    
+}
+#menu{
+    font-size: 2rem;
+    margin: auto;
+}
+
+#menu::before{
+    content: "≡";
+}
+
+/*---------------------style the nav element-------------------*/
+nav{
+    display: flex;    
+}
+.navigation{
+    background-image: linear-gradient(rgb(14, 239, 14), rgb(5, 45, 5));
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    display: none;  
+}
+.navigation li{
+    padding: 5px;
+    margin: auto;
+    list-style: none;
+    
+}
+
+.navigation li a{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    display: block;
+
+}
+
+.navigation a:hover{
+    border: 2px solid white;
+    border-radius: 5px;
+
+}
+
+.open, .navigation li{
+    display: block;
+}
+#menu.open::before{
+    content: "❌";
+}
+
+
+/*------------------styling the FOOTER-----------------------------*/
+
+footer {
+    display: block;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 10px;
+}
+.pragra p {
+    padding: 3px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+ .imag {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     padding: 5px;
+ }
+
+
+/*--------------Styling the MAIN of the INDEX.HTML-------------------*/
+
+main{
+    display: block;
+    margin: .5rem;
+}
+picture img{
+    width: 100%;
+    height: auto;
+}
+
+.main-content p{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.why{
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: aliceblue;
+    margin: 1rem auto;
+}
+
+
+/*--------------Styling the MAIN of  the REGISTRATION.HTML-------------------*/
+
+
+.regis{
+    padding: .5rem;
+    text-align: center;
+    
+    margin: 1rem auto;
+    border-radius: 5px;
+    font-size: 1.5rem;
+
+}
+
+form{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: .5rem;
+    box-shadow: 1px 1px 5px grey;
+
+    
+}
+
+fieldset{
+    padding: .5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+select
+{
+    display: block;
+    width: 100%;
+    padding: .75rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.part{
+    margin: 1rem 0;
+}
+label{
+    font-size: 1.2rem;
+}
+
+legend {
+    font-size: 1.5rem;
+    margin-left: 1.3rem;
+    color: navy;
+    font-style: italic;
+}
+
+input[type="submit"]{
+    font-size: 1.5rem;
+    padding: .75rem;
+    width: 200px;
+    background-image: linear-gradient(rgb(14, 239, 14), rgb(5, 45, 5));
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: 0 2%;
+}
+
+/*------------STYLE THE MAIN OF ABOUT.HTML-----------*/
+
+ .mission-content img {
+     width: 100%;
+     height: auto;
+ }
+.mission-content{
+    margin: 1rem 0;
+    display: grid;
+}
+
+.mission h2{
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-align: center; */
+    padding: .5rem;
+    color: navy;
+    border-radius: 5px;
+    margin: .5rem;
+}
+.mission{
+    border: 1px solid grey;
+    padding: .5rem;
+    font-size: 1.1rem;
+    margin: .5rem 0;
+    border-radius: 5px;
+}
+
+.mission li{
+    margin: .5rem 0 .5rem 2rem;
+    padding: 5px;
+}
+
+.cour{
+    border: 1px solid grey;
+    padding: .5rem;
+    border-radius: 5px;
+}
+.cour h2{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    color: navy;
+    font-size: 1.5rem;
+}
+
+.cour li{
+    color: navy;
+    margin: .5rem 0 .5rem 2rem;
+}
+.cour p{
+    font-size: 1.2rem;
+}
+
+/*------STYLE THE DARK MODE-------*/
+#darkToggle {
+    position: absolute;
+    top: 5px;
+    right: .5rem;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    background: #222;
+    color: #fff;
+    border-radius: 5px;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e;
+    color: white;
+}
+body.dark-mode footer {
+    color: black;
+}
+body.dark-mode header h1{
+    color: white;
+}
+
+body.dark-mode nav a {
+    color: #ffffff;
+}
+
+body.dark-mode .mission {
+    background-color: #1a1a1a;
+}

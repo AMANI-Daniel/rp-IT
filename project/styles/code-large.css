@@ -1,0 +1,113 @@
+@media (min-width: 650px) {
+
+header {
+        padding: .5rem;
+        background-color: aliceblue;
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        margin: .5rem;
+    }
+header img {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+
+}
+   .top-nav{
+    display: block;
+   }
+
+   h1 {
+       text-align: center;
+       padding: 5px;
+       color: navy;
+   }
+
+   #menu{
+    display: none;
+   }
+   .navigation{
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+
+   /*-------------------------Styling FOOTER-----------------------*/
+   footer {
+       background-color: aliceblue;
+       display: grid;
+       grid-template-columns: 3fr 1fr;
+       padding: .5rem;
+       margin: .5rem;
+   }
+
+   .pragra p {
+       padding: 5px;
+       font-size: 1.2rem;
+       text-align: center;
+   }
+
+   .imag {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+   }
+
+
+   /*---------------------Styling the MAIN of the INDEX.HTML--------*/
+
+
+    .main-content{
+        position: relative;
+    }
+   .main-content p{
+        position: absolute;
+        background-color: aliceblue;
+        color: black;
+        padding: 10px;
+        font-size: 1.3rem;
+   } 
+   .join{
+        top: 10%;
+        left: 40%;
+   }   
+   .why{
+        bottom: 10%;
+        left: 10%;
+        width: 80%;
+
+   }
+            
+   /*----------Style the MAIN of the REGISTRATION.HTML-----------*/
+   .regis{
+    width: 60%;
+   }
+   form{
+        width: 60%;
+        margin: 0 auto;
+   }
+
+   input[type="text"],
+   input[type="email"],
+   select
+   {
+    width: 80%;
+   }
+   
+   input[type="submit"]{
+        width: 76%;
+   }
+
+   /*------------STYLE THE MAIN OF ABOUT.HTML------------*/
+
+  .mission-content{
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .mission-content img{
+    padding: 10px;
+  }
+
+    
+}
